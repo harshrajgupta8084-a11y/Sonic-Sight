@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Sonic-Sight</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <img src="./logo2.png" class="logo" alt="site-logo" />
+        <h1 class="heading limelight-regular">Sonic Sight</h1>
+    </header>
+    <main>
+        <div class="hide">
+            <h1 class="site-aim fascinate-regular">Aim</h1>
+            <p class="aim">This is a site that helps deaf people to know the way they speak and loudness of there voice which leads to boost in confidence and helps them to make new friends</p>
+            <button class="get-started">Get Started</button>
+        </div>
+        <div class="container">
+            <div class="flex-box">
+                <div class="box">
+                    <div class="box-head">
+                        <i class="fa-solid fa-play play"></i>
+                        <select name="Language" id="Language">
+                            <option value="English" data-lang="en-US">English</option>
+                            <option value="Hindi" data-lang="hi-IN">Hindi</option>
+                        </select>
+                    </div>
+                    <p id="text">
+
+                    </p>
+                </div>
+                <div class="status-box">
+                    <div class="acc-box">
+                        <span class="label">Accuracy</span>
+                        <div class="gauge-container">
+                            <canvas id="accuracyGauge"></canvas>
+                            <div id="accValue" class="gauge-text">0 %</div>
+                        </div>
+                    </div>
+                    <div class="freq-box">
+                        <span class="label">Frequency</span>
+                        <div class="gauge-container">
+                            <canvas id="frequencyGauge"></canvas>
+                            <div id="freqValue" class="gauge-text">0 Hz</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="graph-box">
+                
+                <div class="settings-container">
+                    <i class="fa-solid fa-gear setting" id="settings-icon"></i>
+                    <div class="mode-menu" id="mode-menu">
+                        <p>Mode</p>
+                        <span class="mode-option">Normal</span>
+                        <span class="mode-option">Whisper</span>
+                        <span class="mode-option">Speaker</span>
+                    </div>
+                    <h3 id="tittle">Normal</h3>
+                </div>
+                <canvas id="visualizer"></canvas>
+            </div>  
+        </div>    
+
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

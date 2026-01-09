@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&display=swap');
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fascinate-regular {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    /* Replace #123456 with your logo's exact color code */
+    background: linear-gradient(to right, #47eb47, #af46e8); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.heading {
+    color: white;
+    font-size: 3rem;
+
+}
+.logo {
+    width: 90px;
+    object-position: center;
+    object-fit: contain;
+    border-radius:  40px;
+}
+
+.hide{
+    opacity: 1;
+    padding: 10px;
+    justify-items: center;
+    text-align: center;
+    height: 100vh;
+    align-content: center;
+    background-color: black;
+}
+
+.site-aim {
+    font-size: 4rem;
+    animation: scale 1.2s ease-in-out 1;
+    color: white;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.aim {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.get-started {
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(31, 126, 204);
+    color: white;
+    font-size: 1.15rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+    background-color: black;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.status-box {
+    display: flex;
+    width: 30%;
+    height: 200px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid transparent; /* The border must be transparent */
+    border-radius: 20px;
+    
+    /* The first gradient is the inner box color, 
+        the second is the border color */
+    background: 
+        linear-gradient(rgb(40, 37, 37),black) padding-box, 
+        linear-gradient(to right, #47eb47, #af46e8) border-box;
+}
+
+.acc-box {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgb(62, 62, 62), rgb(28, 21, 21));
+    border-radius: 20px;
+    margin-right: 10px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.freq-box {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(rgb(62, 62, 62), rgb(28, 21, 21));
+    border-radius: 20px;
+    margin-left: 10px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.label {
+    font-size: 1.2rem; /* Reduced from 2rem to fit the 200px box height */
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#accValue {
+    background: linear-gradient(to right, #47eb47, #af46e8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#freqValue {
+    background: linear-gradient(to right, #47eb47, #af46e8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Keep your existing .status-box, .acc-box, and .freq-box code */
+
+.gauge-container {
+    position: relative;
+    width: 100%;    /* Changed from 240px to 100% to fit the box */
+    height: 100px;   /* Adjusted height to fit within 200px total box height */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#accuracyGauge, #frequencyGauge {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.gauge-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right, #47eb47, #af46e8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem; /* Scaled down slightly to fit better */
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box {
+    width: 70%;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid transparent; /* The border must be transparent */
+    border-radius: 20px;
+    
+    /* The first gradient is the inner box color, 
+        the second is the border color */
+    background: 
+        linear-gradient(rgb(40, 37, 37),black) padding-box, 
+        linear-gradient(to right, #47eb47, #af46e8) border-box;
+}
+
+.box-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.play{
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+#Language {
+    background-color: #333;
+    color: white;
+    height: 30px;
+    border-radius:  15px;
+    border: none;
+}
+
+#visualizer {
+    margin-top: 10px;
+    width: 100%;
+    height:  calc(80vh - 300px - 50px);
+    border-radius: 10px;
+    display: block;
+}
+
+#text {
+    min-height: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.graph-box {
+    height: calc(80vh - 300px);
+    background-color: black;
+    border-radius: 15px; 
+    margin-top: 15px;
+    padding: 20px;
+    border: 2px solid transparent; /* The border must be transparent */
+    border-radius: 20px;
+    
+    /* The first gradient is the inner box color, 
+        the second is the border color */
+    background: 
+        linear-gradient(rgb(40, 37, 37),black) padding-box, 
+        linear-gradient(to right, #47eb47, #af46e8) border-box;
+}
+
+.settings-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#tittle {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.setting {
+    color:  white;
+    cursor: pointer;
+    width: 30px;
+}
+
+.mode-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 30px;    /* Adjust based on icon size */
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    min-width: 100px;
+}
+
+/* Show the menu when this class is added via JS */
+.mode-menu.active {
+    display: block;
+}
+
+.mode-option {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mode-option:hover {
+    background-color: #f0f0f0;
+}
